@@ -8,14 +8,14 @@ category: research
 ---
 > [Github](https://github.com/raghavauppuluri13/rope-manipulation), [Presentation](https://docs.google.com/presentation/d/1zRuhXxpXfUB-i6lupotLf98f1N1sZB_0EnAhp_hPZIs/edit?usp=sharing)
 
-For the CS 593 Robotics course and research at [MARS Lab](), I am developing a self-supervised rope manipulation robot system in MuJoCo with a Panda robot arm. This project utilizes the following components:
+For the CS 593 Robotics course and research at [MARS Lab](https://www.purduemars.com/), I am developing a self-supervised rope manipulation robot system in MuJoCo with a Panda robot arm. This project utilizes the following components:
 - Causal InfoGAN framework[^1] for planning from pixel observations
 - Inverse Dynamics[^2] model mapping pixels to high-level actions
 - PID/MPC-CEM for generating and executing joint-space trajectories from high-level actions
 
 ### Kinematic Planning/Control
 
-Given start and goal poses in task-space, simple linear interpolation is used to plan discretized XYZ waypoints from start to goal. Then inverse kinematics is used to generate joint-space trajectories.
+Given start and goal poses in task-space, simple linear interpolation is used to plan discretized XYZ waypoints from start to goal. Then inverse kinematics is used to generate joint-space trajectories that are executed via PID control.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -29,7 +29,7 @@ Given start and goal poses in task-space, simple linear interpolation is used to
     </div>
 </div>
 <div class="caption">
-    Path planning in simulated competition arena.
+    Random interaction rollouts with rope in MuJoCo
 </div>
 
 ### Learning-based Planning from Pixels with Causal InfoGAN

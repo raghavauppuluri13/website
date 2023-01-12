@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: Portfolio of club projects and research projects
 nav: true
-display_categories: [clubs,research]
+display_categories: [clubs,research,personal]
 horizontal: false
 ---
 
