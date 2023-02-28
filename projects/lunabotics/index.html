@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://raghavauppuluri.dev/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,24 +10,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Raghava  Uppuluri | Page not found</title>
+    <title>Raghava  Uppuluri | Lunabotics Autonomy</title>
     <meta name="author" content="Raghava  Uppuluri" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Building a full autonomy stack for a Lunar Rover for the Annual NASA Lunabotics Competition" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Raghava  Uppuluri" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Raghava  Uppuluri | Page not found" />
-    <meta property="og:url" content="https://raghavauppuluri.dev/404.html" />
-    <meta property="og:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta property="og:title" content="Raghava  Uppuluri | Lunabotics Autonomy" />
+    <meta property="og:url" content="https://raghavauppuluri.dev/projects/lunabotics/" />
+    <meta property="og:description" content="Building a full autonomy stack for a Lunar Rover for the Annual NASA Lunabotics Competition" />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Page not found" />
-    <meta name="twitter:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="twitter:title" content="Lunabotics Autonomy" />
+    <meta name="twitter:description" content="Building a full autonomy stack for a Lunar Rover for the Annual NASA Lunabotics Competition" />
     
     <meta name="twitter:site" content="@UppuluriRaghava" />
     <meta name="twitter:creator" content="@UppuluriRaghava" />
@@ -40,10 +40,10 @@
           "@type": "Person",
           "name": "Raghava  Uppuluri"
         },
-        "url": "https://raghavauppuluri.dev/404.html",
+        "url": "https://raghavauppuluri.dev/projects/lunabotics/",
         "@type": "WebSite",
-        "description": "Looks like there has been a mistake. Nothing exists here.",
-        "headline": "Page not found",
+        "description": "Building a full autonomy stack for a Lunar Rover for the Annual NASA Lunabotics Competition",
+        "headline": "Lunabotics Autonomy",
         "sameAs": ["https://github.com/raghavauppuluri13", "https://www.linkedin.com/in/raghava-uppuluri", "https://twitter.com/UppuluriRaghava"],
         "name": "Raghava  Uppuluri",
         "@context": "https://schema.org"
@@ -66,7 +66,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://raghavauppuluri.dev/404.html">
+    <link rel="canonical" href="https://raghavauppuluri.dev/projects/lunabotics/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -124,12 +124,147 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Lunabotics Autonomy</h1>
+            <p class="post-description">Building a full autonomy stack for a Lunar Rover for the Annual NASA Lunabotics Competition</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://raghavauppuluri.dev/">here</a>.</p>
+            <blockquote>
+  <p><a href="https://github.com/PurdueLunabotics/purdue_lunabotics" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://web.ics.purdue.edu/~lunabot/" target="_blank" rel="noopener noreferrer">Website</a></p>
+</blockquote>
+
+<h2 id="overview">Overview</h2>
+<p>The goal of the NASA Lunabotics competition is to build a rover that can autonomously navigate through obstacles and mine icy lunar regolith and deposit into a collection sieve. As the Software Lead, contributions are the following:</p>
+<ul>
+  <li>Communication</li>
+  <li>Control</li>
+  <li>Localization and Mapping</li>
+  <li>Navigation</li>
+  <li>Testing and Quality Control</li>
+</ul>
+
+<h3 id="communication">Communication</h3>
+
+<ul>
+  <li>
+    <p>Externally, implemented communication using a router between robot and control center.</p>
+  </li>
+  <li>
+    <p>Internally, implemented serial communication interface between onboard compute and micro-controller.</p>
+  </li>
+</ul>
+
+<h3 id="control">Control</h3>
+
+<ul>
+  <li>Implemented manual controller system logic that controls drivetrain with tank drive controls, angle of excavation tool, extension of lead screw, and deposition with analog PWM signals.</li>
+</ul>
+
+<div class="embed-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QuUIjPAKYAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<div class="caption">
+    Manual Control System Demo
+</div>
+
+<h3 id="localizationmapping">Localization/Mapping</h3>
+
+<ul>
+  <li>
+    <p>With visual-odometry data sourced from a T265 Localization camera, utilized matrix algebra to compute coordinate transformations from the camera odometry to the robot base odometry. The drift error after 2 min of continuous operation was <strong>0.3m</strong>.</p>
+  </li>
+  <li>
+    <p>With 4 AprilTags fiducial markers, the collection bin is localized within <strong>0.17m of error</strong>.</p>
+  </li>
+  <li>
+    <p>Using two depth cameras and a 2D lidar for perception, I combined the point clouds into a voxelized grid using <strong>Octomap</strong>, which was then used for generating an occupancy grid for planning.</p>
+  </li>
+</ul>
+
+<p>The following shows the result of the combination of the above implementations:</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/lunabotics/demo-mapping-obstacles.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/lunabotics/demo-mapping-obstacles.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/lunabotics/demo-mapping-obstacles.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/lunabotics/demo-mapping-obstacles.gif" title="Mapping and localization demo with obstacles">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    Localization and mapping demo in the real world
+</div>
+
+<h3 id="planning">Planning</h3>
+
+<h4 id="global-planner---rrtstar">Global Planner - RRTStar</h4>
+
+<ul>
+  <li>Implemented the <strong>RRT* algorithm</strong> to plan near-optimal global paths in <strong>under 2 sec</strong>.</li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/lunabotics/sim_nav_gazebo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/lunabotics/sim_nav_gazebo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/lunabotics/sim_nav_gazebo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/lunabotics/sim_nav_gazebo.png" title="Gazebo environment with robot">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/lunabotics/sim_nav_rviz-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/lunabotics/sim_nav_rviz-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/lunabotics/sim_nav_rviz-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/lunabotics/sim_nav_rviz.png" title="Rviz environment with robot and obstacle detection">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/lunabotics/sim_nav_rrtstar-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/lunabotics/sim_nav_rrtstar-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/lunabotics/sim_nav_rrtstar-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/lunabotics/sim_nav_rrtstar.png" title="Grid representation and RRT* planning paths">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Path planning in a simulated competition arena.
+</div>
+
+<h3 id="testing-and-quality-control">Testing and Quality Control</h3>
+
+<ul>
+  <li>Implemented <code class="language-plaintext highlighter-rouge">unittest</code> and <code class="language-plaintext highlighter-rouge">rostest</code> frameworks in safety critical ROS packages such as navigation, reviewed PRs from the team, and integrated with the GitHub CI/CD pipeline to ensure a clean codebase.</li>
+</ul>
 
           </article>
 
