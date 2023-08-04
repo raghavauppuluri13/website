@@ -12,7 +12,7 @@ pip3 install panflute
 2. Build
 
 ```
-./build.sh
+./update
 ```
 
 Inspired by [Kyle Vedder's website](https://github.com/kylevedder/kylevedder.github.io/tree/master) 
