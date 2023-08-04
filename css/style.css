@@ -1,0 +1,106 @@
+body {
+  font-family: 'Times New Roman', serif;
+  padding: 20px;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#name, #description {
+  text-align: center;
+}
+
+#picture {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+#updates {
+  list-style-type: none;
+  padding: 0;
+}
+
+#updates li a {
+  text-decoration: none;
+  color: black;
+}
+
+#updates li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for mobile devices */
+@media (min-width: 800px) {
+    * {
+        max-width: 800;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 100%; /* Adjust this value as needed */
+    box-sizing: border-box;
+}
+
+.project-tile:hover {
+    background-color: #f3f3f3;
+    border-color: #333;
+}
+
+.image-grid {
+    display: block;
+    grid-template-columns: 1fr 1fr; /* Two images per row */
+    gap: 10px;
+    margin: auto;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto; /* Preserve aspect ratio */
+}
+
+.project-tile p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* For tablets and small desktops */
+@media (min-width: 768px) {
+    .project-tile {
+        width: 48%; /* Allows for 2 tiles per row */
+        margin: 1%; /* Creates a small gap between tiles */
+    }
+}
+
+/* For medium desktops and larger */
+@media (min-width: 992px) {
+    .project-tile {
+        width: 30%; /* Allows for 3 tiles per row */
+        margin: 1.5%; /* Creates a small gap between tiles */
+    }
+}
