@@ -4,12 +4,12 @@ HEADER Raghava Uppuluri's Website
 
 ## About me
 
-I am a final-year undergraduate computer engineering student at Purdue researching robotic manipulation at [Purdue MARS](https://www.purduemars.com/) under Yu She. Fascinated by fine motor control in humans, I am interested in
+I am a final-year undergraduate computer engineering student at Purdue researching robotic manipulation at [Purdue MARS](https://www.purduemars.com/) under Yu She. Fascinated by fine motor control in humans, I am interested in:
 
 <div class="updates">
 - leveraging multimodal data (tactile, vision, audio) for end-to-end robotic control
 - integrating optimal control with neural networks
-- completing contact-rich tasks with simple control policies using visuotactile feedback
+- completing contact-rich tasks with tactile feedback
 </div>
 
 ## Timeline
@@ -42,9 +42,8 @@ PROJECT raghavauppuluri13/box_stacker_arm
 
 </div>
 
-
 ## More Information
 
  - GitHub: [raghavauppuluri13](https://github.com/raghavauppuluri13)
- - Twitter: [UppuluriRaghava](https://twitter.com/UppuluriRaghava)
+ - Twitter: [raghavaupp](https://twitter.com/raghavaupp)
  - Email: ruppulur (at) purdue.edu
