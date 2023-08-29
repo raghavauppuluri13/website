@@ -16,7 +16,7 @@ I am a final-year undergraduate computer engineering student at Purdue researchi
 
 <div class="updates">
  - June. 2023 - current: More cool robotics research at Purdue MARS. Stay tuned for preprints! :)
- - May. 2023: Led the Purdue Lunabotics team to a 3rd place finish for autonomy (highest award in 12 years of club history!) at [CAT RMC 2023](https://www.alabamaastrobotics.com/caterpillar-rmc-2023.html) ([code](https://github.com/PurdueLunabotics/purdue_lunabotics))
+ - May. 2023: Led the Purdue Lunabotics team to a 3rd place finish for autonomy (highest award in 12 years of club history!) at [CAT RMC 2023](https://www.alabamaastrobotics.com/caterpillar-rmc-2023.html) ([code](https://github.com/PurdueLunabotics/purdue_lunabotics),[summary](https://github.com/PurdueLunabotics/wiki/wiki/Software#2022-2023))
  - March. 2023: Developed hardware and software for proprioception of a vine robot 
 
 PROJECT raghavauppuluri13/vine-proprio
@@ -47,3 +47,4 @@ PROJECT raghavauppuluri13/box_stacker_arm
  - GitHub: [raghavauppuluri13](https://github.com/raghavauppuluri13)
  - Twitter: [raghavaupp](https://twitter.com/raghavaupp)
  - Email: ruppulur (at) purdue.edu
+ - LinkedIn: [raghava-uppuluri](https://www.linkedin.com/in/raghava-uppuluri/)
