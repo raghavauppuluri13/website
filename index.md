@@ -34,7 +34,7 @@ PROJECT purdue-mars/mars_ros
 
 PROJECT raghavauppuluri13/rope-manipulation
 
- - Sept. 2021: Joined [Purdue MARS](https://www.purduemars.com) under Prof. Yu She to work on perception for 2D deformable objects for a robot bandaging project ([pdf](https://www.raghavauppuluri.dev/pdfs/fall2021bandaging.pdf), [slides](https://docs.google.com/presentation/d/13pxe3zE_ksI2Qhc5lREsEqtrh3r5qXiZIQ2XcSmoYfM/edit?usp=sharing)) 
+ - Sept. 2021: Joined [Purdue MARS](https://www.purduemars.com) under Prof. Yu She to work on perception for a robot bandaging project by learning dense visual descriptors for 2D deformable objects (bandage cloth) using contrastive learning ([pdf](https://www.raghavauppuluri.dev/pdfs/fall2021bandaging.pdf), [slides](https://docs.google.com/presentation/d/13pxe3zE_ksI2Qhc5lREsEqtrh3r5qXiZIQ2XcSmoYfM/edit?usp=sharing)) 
  - Jan. 2021: Joined [Purdue CRL](https://www.purdue.edu/crl/) as a research assistant and developed a [goal classifier](https://github.com/raghavauppuluri13/GoalClassifier) for a Learning-from-Demonstration project using RL
  - Dec. 2020: Built a robot arm to stack boxes
 
