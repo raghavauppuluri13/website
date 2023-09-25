@@ -25,16 +25,19 @@ def build_html(file: Path):
 
     html_file = file.parent / file.name.replace(".md", ".html")
     print(f"{file} -> {html_file}")
-    #os.system(f"cat {tmp_file}")
+    # os.system(f"cat {tmp_file}")
     run_command(
-        f"pandoc -f markdown+raw_attribute+raw_html -t html --filter ./build/css_filter.py {tmp_file} -o {html_file}")
+        f"pandoc -f markdown+raw_attribute+raw_html -t html --filter ./build/css_filter.py {tmp_file} -o {html_file}"
+    )
     Path(tmp_file).unlink()
 
 
 ignore_files = ["README.md"]
 
-# grab all .md files recursively
+# grab all .md files recursively and exclude venv
+
 md_files = list(Path(".").glob("**/*.md"))
+md_files = [f for f in md_files if "venv" not in str(f)]
 
 # remove the files we don't want to convert
 for ignore_file in [Path(e) for e in ignore_files]:
